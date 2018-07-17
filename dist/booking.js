@@ -262,18 +262,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 	
 	  // Expose methods
-	  return {
+	  return Object.assign({
 	    setConfig:    config.parseAndUpdate,
 	    getConfig:    getConfig,
 	    getVersion:   getVersion,
 	    render:       startRender,
 	    init:         init,
 	    destroy:      destroy,
-	    timekitCreateBooking: render.timekitCreateBooking,
-	    fullCalendar: render.fullCalendar,
-	    timekitSdk:   sdk
-	  };
-	
+	    timekitSdk:   sdk,
+	  },
+	    render
+	    // Everything from render.js
+	  );
 	}
 	
 	module.exports = Initialize
