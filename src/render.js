@@ -413,6 +413,7 @@ function InitRender(deps) {
     }));
 
     rootTarget.addClass('has-displayname');
+    $('.bookingjs-displayname').remove();
     rootTarget.append(displayNameTarget);
 
   };

@@ -5623,6 +5623,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }));
 	
 	    rootTarget.addClass('has-displayname');
+	    $('.bookingjs-displayname').remove();
 	    rootTarget.append(displayNameTarget);
 	
 	  };
