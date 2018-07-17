@@ -5199,8 +5199,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    calendarTarget.fullCalendar('gotoDate', firstEventStart);
 	
-	    var firstEventStartHour = moment(firstEventStart).format('H');
-	    scrollToTime(firstEventStartHour);
+	    if (!getConfig().ui.disableScrollToTime) {
+	      var firstEventStartHour = moment(firstEventStart).format('H');
+	      scrollToTime(firstEventStartHour);
+	    }
 	
 	  };
 	
